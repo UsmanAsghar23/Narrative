@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NFL Team Performance Narrative Visualization</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/d3-annotation@2.5.1/dist/d3-annotation.min.js"></script>
+</head>
+<body>
+  <h1>NFL Team Performance: 2002-2024</h1>
+  
+  <!-- Navigation circles at top -->
+  <div id="navCircles" style="text-align: center; margin: 20px 0;">
+    <div id="circle1" class="nav-circle active" style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; background-color: #333; margin: 0 5px; cursor: pointer;"></div>
+    <div id="circle2" class="nav-circle" style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #333; margin: 0 5px; cursor: pointer;"></div>
+    <div id="circle3" class="nav-circle" style="display: inline-block; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #333; margin: 0 5px; cursor: pointer;"></div>
+  </div>
+  
+  <div id="controls"></div>
+  <div id="scene"></div>
+  
+  <!-- Navigation arrows on sides -->
+  <div id="navArrows" style="position: relative;">
+    <div id="leftArrow" style="position: absolute; left: 50px; top: 40%; transform: translateY(-600%); cursor: pointer; font-size: 32px; color: #333;">◀</div>
+    <div id="rightArrow" style="position: absolute; right: 50px; top: 40%; transform: translateY(-750%); cursor: pointer; font-size: 32px; color: #333;">▶</div>
+  </div>
+  
+  <footer>
+    <p>Made with D3.js and d3-annotation. Data: NFL 2002-2024</p>
+  </footer>
+  <script src="utils.js"></script>
+  <script src="controls.js"></script>
+  <script src="scene1.js"></script>
+  <script src="scene2.js"></script>
+  <script src="scene3.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

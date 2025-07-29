@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+    margin: 0;
+    padding: 0 0 40px 0;
+  }
+  h1 {
+    text-align: center;
+    margin-top: 24px;
+  }
+  #controls {
+    margin: 20px auto 10px auto;
+    text-align: center;
+  }
+  #scene {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 500px;
+  }
+  #nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  #nav button {
+    padding: 8px 18px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  #nav button:hover {
+    background: #e0e0e0;
+  }
+  #sceneTitle {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  .annotation-note-title {
+    font-weight: bold;
+    fill: #d7263d;
+  }
+  .annotation-note-label {
+    fill: #333;
+  }
+  footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 40px;
+  }
+  .tooltip {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 8px 12px;
+    pointer-events: none;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 10;
+  }
