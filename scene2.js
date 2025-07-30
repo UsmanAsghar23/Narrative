@@ -171,7 +171,7 @@ function renderScene2() {
     .attr("fill", "#2d5a27")
     .text(`Best Offense: ${bestOffense.team} (${bestOffense.pointsFor} pts)`);
 
-  // Best defense annotation (least points allowed)
+  // Best defense annotation 
   svg.append("g")
     .attr("class", "annotation")
     .append("circle")
